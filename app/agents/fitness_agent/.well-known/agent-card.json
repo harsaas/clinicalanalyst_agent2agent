@@ -1,0 +1,25 @@
+{
+  "id": "fitness-instructor-001",
+  "name": "Fitness Strategy Agent",
+  "version": "1.0.0",
+  "description": "Specialized agent for researching and designing workout plans using real-time clinical fitness data via Tavily.",
+  "capabilities": [
+    {
+      "name": "workout_planning",
+      "description": "Generates exercise routines based on BMI, health goals, and physical limitations.",
+      "inputs": ["bmi_score", "bmi_category", "user_goals"]
+    },
+    {
+      "name": "fitness_research",
+      "description": "Uses Tavily Search to find the latest evidence-based exercise guidelines."
+    }
+  ],
+  "endpoints": {
+    "a2a": "http://localhost:5001/a2a",
+    "health": "http://localhost:5001/health"
+  },
+  "mcp_support": {
+    "supported": true,
+    "tools": ["tavily_search"]
+  }
+}

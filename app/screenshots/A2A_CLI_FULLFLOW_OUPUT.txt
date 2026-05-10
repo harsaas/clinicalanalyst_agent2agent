@@ -1,0 +1,81 @@
+(.venv) PS C:\Users\harip\OneDrive\Desktop\Google_A2A\A2A_PROJECT\clinical-agent-system> c:/Users/harip/OneDrive/Desktop/Google_A2A/A2A_PROJECT/clinical-agent-system/.venv/Scripts/python.exe run_full_flow.py --weight-kg 85 --height-cm 175 --query "beans and rice" --no-servers
+C:\Users\harip\OneDrive\Desktop\Google_A2A\A2A_PROJECT\clinical-agent-system\.venv\Lib\site-packages\langgraph\cache\base\__init__.py:8: LangChainPendingDeprecationWarning: The default value of `allowed_objects` will change in a future version. Pass an explicit value (e.g., allowed_objects='messages' or allowed_objects='core') to suppress this warning.
+  from langgraph.checkpoint.serde.jsonplus import JsonPlusSerializer
+
+===== FINAL REPORT =====
+
+BMI: 27.755102040816325 (Overweight)
+
+Nutrition:
+BMI context: BMI 27.755102040816325 (Overweight)
+
+Recipe 1: Quick Black Beans and Brown Rice
+Ingredients:
+- 1 cup instant brown rice
+- 1 can black beans, drained and rinsed
+- 1 tablespoon olive oil
+- 1 small onion, chopped
+- 2 cloves garlic, minced
+- 1 teaspoon cumin
+- 1 teaspoon chili powder
+- Salt to taste
+- Pepper to taste
+- 1/4 cup chopped cilantro
+Steps (10):
+1) Cook the instant brown rice according to package instructions.
+2) Heat olive oil in a pan over medium heat.
+3) Add chopped onion and sauté until translucent.
+4) Stir in minced garlic and cook for 1 minute.
+5) Add black beans to the pan and stir well.
+6) Season with cumin, chili powder, salt, and pepper.
+7) Cook for 5 minutes, stirring occasionally.
+8) Remove from heat and stir in cooked rice.
+9) Garnish with chopped cilantro.
+10) Serve warm.
+
+Recipe 2: Spicy Pinto Beans and Quinoa
+Ingredients:
+- 1 cup quinoa
+- 1 can pinto beans, drained and rinsed
+- 1 tablespoon olive oil
+- 1 red bell pepper, chopped
+- 2 cloves garlic, minced
+- 1 teaspoon smoked paprika
+- 1 teaspoon cayenne pepper
+- Salt to taste
+- Pepper to taste
+- 1/4 cup chopped green onions
+Steps (10):
+1) Cook quinoa according to package instructions.
+2) Heat olive oil in a pan over medium heat.
+3) Add chopped red bell pepper and sauté until soft.
+4) Stir in minced garlic and cook for 1 minute.
+5) Add pinto beans to the pan and mix well.
+6) Season with smoked paprika, cayenne pepper, salt, and pepper.
+7) Cook for 5 minutes, stirring occasionally.
+8) Remove from heat and stir in cooked quinoa.
+9) Garnish with chopped green onions.
+10) Serve immediately.
+
+Fitness:
+# The Best Exercises for Obese Clients: A Complete Guide. An obese person is someone carrying significant amounts of body weight and body fat. A body mass index (BMI) of over 25 is considered overweight, and a score of 30 or more is classified as obese. Carrying extra weight and fat puts stress on the body and increases the risk of health complications. The risks are more significant for obese individuals because they have a much higher body fat percentage. A structured exercise program can significantly improve the health of obese people. Read on if you’re struggling with that question and aren’t sure how to train obese clients. Even if the client can only walk for a minute or two before getting tired, they have a physical fitness foundation you can use to help them. Strength training is another form of exercise that can work well, even for an overweight client with little to no fitness experience.
+
+
+===== JSON OUTPUT =====
+
+{
+  "user_input": {
+    "weight_kg": 85.0,
+    "height_cm": 175.0,
+    "query": "beans and rice"
+  },
+  "bmi_metrics": {
+    "bmi": 27.755102040816325,
+    "bmi_category": "Overweight",
+    "units": "metric"
+  },
+  "nutrition_plan": "BMI context: BMI 27.755102040816325 (Overweight)\n\nRecipe 1: Quick Black Beans and Brown Rice\nIngredients:\n- 1 cup instant brown rice\n- 1 can black beans, drained and rinsed\n- 1 tablespoon olive oil\n- 1 small onion, chopped\n- 2 cloves garlic, minced\n- 1 teaspoon cumin\n- 1 teaspoon chili powder\n- Salt to taste\n- Pepper to taste\n- 1/4 cup chopped cilantro\nSteps (10):\n1) Cook the instant brown rice according to package instructions.\n2) Heat olive oil in a pan over medium heat.\n3) Add chopped onion and saut\u00e9 until translucent.\n4) Stir in minced garlic and cook for 1 minute.\n5) Add black beans to the pan and stir well.\n6) Season with cumin, chili powder, salt, and pepper.\n7) Cook for 5 minutes, stirring occasionally.\n8) Remove from heat and stir in cooked rice.\n9) Garnish with chopped cilantro.\n10) Serve warm.\n\nRecipe 2: Spicy Pinto Beans and Quinoa\nIngredients:\n- 1 cup quinoa\n- 1 can pinto beans, drained and rinsed\n- 1 tablespoon olive oil\n- 1 red bell pepper, chopped\n- 2 cloves garlic, minced\n- 1 teaspoon smoked paprika\n- 1 teaspoon cayenne pepper\n- Salt to taste\n- Pepper to taste\n- 1/4 cup chopped green onions\nSteps (10):\n1) Cook quinoa according to package instructions.\n2) Heat olive oil in a pan over medium heat.\n3) Add chopped red bell pepper and saut\u00e9 until soft.\n4) Stir in minced garlic and cook for 1 minute.\n5) Add pinto beans to the pan and mix well.\n6) Season with smoked paprika, cayenne pepper, salt, and pepper.\n7) Cook for 5 minutes, stirring occasionally.\n8) Remove from heat and stir in cooked quinoa.\n9) Garnish with chopped green onions.\n10) Serve immediately.",
+  "fitness_plan": "# The Best Exercises for Obese Clients: A Complete Guide. An obese person is someone carrying significant amounts of body weight and body fat. A body mass index (BMI) of over 25 is considered overweight, and a score of 30 or more is classified as obese. Carrying extra weight and fat puts stress on the body and increases the risk of health complications. The risks are more significant for obese individuals because they have a much higher body fat percentage. A structured exercise program can significantly improve the health of obese people. Read on if you\u2019re struggling with that question and aren\u2019t sure how to train obese clients. Even if the client can only walk for a minute or two before getting tired, they have a physical fitness foundation you can use to help them. Strength training is another form of exercise that can work well, even for an overweight client with little to no fitness experience.",
+  "final_report": "BMI: 27.755102040816325 (Overweight)\n\nNutrition:\nBMI context: BMI 27.755102040816325 (Overweight)\n\nRecipe 1: Quick Black Beans and Brown Rice\nIngredients:\n- 1 cup instant brown rice\n- 1 can black beans, drained and rinsed\n- 1 tablespoon olive oil\n- 1 small onion, chopped\n- 2 cloves garlic, minced\n- 1 teaspoon cumin\n- 1 teaspoon chili powder\n- Salt to taste\n- Pepper to taste\n- 1/4 cup chopped cilantro\nSteps (10):\n1) Cook the instant brown rice according to package instructions.\n2) Heat olive oil in a pan over medium heat.\n3) Add chopped onion and saut\u00e9 until translucent.\n4) Stir in minced garlic and cook for 1 minute.\n5) Add black beans to the pan and stir well.\n6) Season with cumin, chili powder, salt, and pepper.\n7) Cook for 5 minutes, stirring occasionally.\n8) Remove from heat and stir in cooked rice.\n9) Garnish with chopped cilantro.\n10) Serve warm.\n\nRecipe 2: Spicy Pinto Beans and Quinoa\nIngredients:\n- 1 cup quinoa\n- 1 can pinto beans, drained and rinsed\n- 1 tablespoon olive oil\n- 1 red bell pepper, chopped\n- 2 cloves garlic, minced\n- 1 teaspoon smoked paprika\n- 1 teaspoon cayenne pepper\n- Salt to taste\n- Pepper to taste\n- 1/4 cup chopped green onions\nSteps (10):\n1) Cook quinoa according to package instructions.\n2) Heat olive oil in a pan over medium heat.\n3) Add chopped red bell pepper and saut\u00e9 until soft.\n4) Stir in minced garlic and cook for 1 minute.\n5) Add pinto beans to the pan and mix well.\n6) Season with smoked paprika, cayenne pepper, salt, and pepper.\n7) Cook for 5 minutes, stirring occasionally.\n8) Remove from heat and stir in cooked quinoa.\n9) Garnish with chopped green onions.\n10) Serve immediately.\n\nFitness:\n# The Best Exercises for Obese Clients: A Complete Guide. An obese person is someone carrying significant amounts of body weight and body fat. A body mass index (BMI) of over 25 is considered overweight, and a score of 30 or more is classified as obese. Carrying extra weight and fat puts stress on the body and increases the risk of health complications. The risks are more significant for obese individuals because they have a much higher body fat percentage. A structured exercise program can significantly improve the health of obese people. Read on if you\u2019re struggling with that question and aren\u2019t sure how to train obese clients. Even if the client can only walk for a minute or two before getting tired, they have a physical fitness foundation you can use to help them. Strength training is another form of exercise that can work well, even for an overweight client with little to no fitness experience.\n"
+}
+(.venv) PS C:\Users\harip\OneDrive\Desktop\Google_A2A\A2A_PROJECT\clinical-agent-system> 

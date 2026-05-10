@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+README.md
+readmed.md
+.DS_Store
+storage/
+
+# Project data/artifacts (keep repo lightweight)
+data/**
+!data/
+!data/processed_narratives/
+!data/processed_narratives/synthea_narratives.txt
+
+# Keep screenshots tracked
+# (do not ignore screenshots/)
+*.zip

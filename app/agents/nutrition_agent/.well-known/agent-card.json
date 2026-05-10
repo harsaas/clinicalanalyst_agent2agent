@@ -1,0 +1,42 @@
+{
+	"id": "nutrition-agent-001",
+	"name": "Nutrition Recipe Agent",
+	"version": "1.0.0",
+	"description": "Generates BMI-aware recipe suggestions using USDA FoodData Central data and an OpenAI model.",
+	"capabilities": [
+		{
+			"name": "nutrition_lookup",
+			"description": "Fetches factual nutrition data for a food query via USDA FoodData Central.",
+			"inputs": ["query"]
+		},
+		{
+			"name": "recipe_generation",
+			"description": "Creates a practical recipe suggestion conditioned on USDA nutrition data and BMI context.",
+			"inputs": ["query", "bmi", "bmi_category"]
+		}
+	],
+	"endpoints": {
+		"a2a": "http://localhost:5002/a2a"
+	},
+	"request_schema": {
+		"type": "object",
+		"properties": {
+			"query": { "type": "string", "description": "Food query to look up (e.g., 'apple', 'chicken breast')." },
+			"bmi": { "type": ["number", "null"], "description": "BMI value supplied by the Clinical Agent." },
+			"bmi_category": { "type": ["string", "null"], "description": "BMI category supplied by the Clinical Agent (e.g., Normal weight, Overweight)." }
+		},
+		"required": ["query"]
+	},
+	"response_schema": {
+		"type": "object",
+		"properties": {
+			"status": { "type": "string" },
+			"result": { "type": "string", "description": "Generated recipe text from the LLM." }
+		},
+		"required": ["status", "result"]
+	},
+	"mcp_support": {
+		"supported": false,
+		"tools": []
+	}
+}
