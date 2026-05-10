@@ -133,3 +133,6 @@ Environment variables (optional):
 
 - A2A messages are exchanged as JSON payloads embedded in `TextContent.text`.
 - The BMI tool is an MCP server run locally via stdio (no HTTP) and called by the Clinical orchestrator.
+
+LANGSMITH TRACING link :
+https://smith.langchain.com/public/fb0044e3-b6c3-4377-a8ed-0b25ce2c6f68/r
